@@ -1,0 +1,13 @@
+name: financialGame
+title: financialGame
+username:
+account: medicihouse
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5545601
+bundleId: 5525928
+url: https://medicihouse.shinyapps.io/financialGame/
+when: 1643624643.46357
+lastSyncTime: 1643624643.46357
+asMultiple: FALSE
+asStatic: FALSE

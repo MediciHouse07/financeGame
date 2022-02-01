@@ -1,0 +1,27 @@
+---
+title: "A Merchat from Central Asia"
+output: html_document
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+score <- 0
+```
+
+## Preface
+![loading.jpg](https://th.bing.com/th/id/R.ce9728289277ce1d2f114af8c2f26032?rik=HR8tQ9kxLJk0rw&riu=http%3a%2f%2ftaos.org%2fwp-content%2fuploads%2f2017%2f10%2fexpression-attractive-misleading-engraving-marketing-coloured-flourish_d15a64a4-a62e-11e5-a915-4cd4d91edd66.jpg&ehk=pFz66fFZ%2bb9Zvg%2b%2f3Ge4%2bycfqbRsXmZ%2fh0QC9iy1ltI%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1){width=40% }<br>
+Year 1200, You are a merchant in middle Asia, you want to do a loan business, assume market rate is about 4%, you want to have 10 ducats of money in 2 years, how much should you lend out to have the earning is possible?
+
+```{r echo=FALSE}
+numericInput("n", 
+ "How much ducats should you lend out? Round it to 2 digits of decimal", 5)
+renderText({
+  if(input$n==9.25) {
+    rv <- reactiveValues()
+    rv$c1 <- 1
+    paste0(" Yes, you are really a good business man")}
+    else {paste0("No ", input$n, " is not the correct answer")}
+})
+```
+
