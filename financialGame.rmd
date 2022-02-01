@@ -23,5 +23,6 @@ renderText({
     paste0(" Yes, you are really a good business man")}
     else {paste0("No ", input$n, " is not the correct answer")}
 })
+# Test commit and git
 ```
 
